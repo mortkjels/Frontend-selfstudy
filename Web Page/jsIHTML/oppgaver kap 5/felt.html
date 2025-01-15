@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>
+        let grunnstoff = "kalium"
+        let kjemiskSymbol = "K"
+        let atomnummer = 19
+        let tilstand = "fast stoff"
+        document.getElementById('output').innerHTML = `
+            Grunnstoffet <b>${grunnstoff}</b> har det kjemiske symbolet <b>${kjemiskSymbol}</b>.<br>
+            Tilstanden ved romtemperatur er <i>${tilstand}</i>.<br>
+            Atomnummeret til grunnstoffet er <i>A</i> = ${atomnummer}, som vil si at det er ${atomnummer} protoner i kjernen.
+        `;
+    </script>
+</body>
+</html>
+
+<!-- grunnen til at vi bruker document get element by id også definere id er for å kunne bruke variablene -->

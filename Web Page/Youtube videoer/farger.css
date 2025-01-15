@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://www.w3schools.com/css/img_lights.jpg");
+}
+
+h1{
+    color: #cdc845;
+    background-color: rgb(0, 0, 0);
+}
+
+p{
+background-color: hsl(0, 0%, 100%, 0.5);
+
+}
+
+div{
+    background-color: rgba(57, 104, 108, 0.5);
+}
+/* 
+Bedre kontroll for å ordne farger er # 
+Dette er i en hexadecimale fargekode der det går i 0-9 og a-f, her kan vi også dragge på navnet til fargen og da vil navnet komme på fargen.
+
+Rgb er en annen måte å skrive farger på, her kan vi skrive fargen i tall fra 0-255, her kan vi også skrive fargen i prosent fra 0-100%.
+
+hsl er den tredje måten. hsl er slik at hue bestemmer fargen, saturation bestemmer hvor mye fargen skal være i fargen og 
+lightness bestemmer hvor lys fargen skal være. Ta en titt på første avsnitt. Nærmere 0 er mørk og opp mot 100 er lys.
+
+rgba er for å lage en farge med gjennomsiktighet. Her kan vi skrive fargen i tall fra 0-255 og så skrive en verdi fra 0-1 for å bestemme gjennomsiktigheten.
+
+*/

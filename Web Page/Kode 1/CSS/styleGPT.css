@@ -1,0 +1,143 @@
+/* Generell styling */
+body {
+    color: #ffffff;
+    background-color: #000000; /* Mørkere bakgrunn for bedre kontrast */
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+a{
+    color: #cccccc;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: #cc8400;
+    font-size: 5px;
+}
+
+h1, h3 {
+    text-align: left;
+    color: #ffa500; /* Oransje farge for heading */
+}
+
+p {
+    color: #cccccc; /* Lysere grå for tekst */
+    margin: 10px 20px;
+}
+
+/* Tabellstyling */
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #333333; /* Mørk bakgrunn */
+    color: #ffffff; /* Hvit tekst */
+    text-align: left;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 1rem;
+}
+
+th {
+    background-color: #444444;
+}
+
+td {
+    background-color: #222222;
+}
+
+/* Bildestyling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px; /* Gjør kantene på bildet avrundede */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Skygge rundt bildet */
+}
+
+/* Skjemastyling */
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #222222; /* Mørk bakgrunn for skjema */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffa500; /* Oransje for etiketter */
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Input styling */
+input[type="text"], input[type="number"], input[type="password"], select {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+input[type="range"] {
+    width: 100%;
+    appearance: none;
+    background: #444444;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffa500; /* Oransje glider */
+    border-radius: 50%;
+    cursor: pointer;
+}
+.form-group label {
+    display: inline-flex;
+    align-items: baseline;
+    margin-right: 20px; /* Mellomrom mellom alternativer */
+    font-weight: bold;
+    color: #ffa500; /* Oransje tekst for konsistens */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Mellomrom mellom knapp og tekst */
+}
+
+
+/* Knappestyling */
+button {
+    background-color: #ffa500;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc8400; /* Mørkere oransje ved hover */
+}

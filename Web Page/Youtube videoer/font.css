@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    ;
+    /* øker sannsynligheten for at de som ser på nettsiden din ser en av fontene
+    vi har også noe som heter monospace, men blir sjeldent brukt. Når vi setter det i body elementet, så vil alle elementene arve denne fonten i html dokumentet.
+    For å overstyre dette så må du sette fonten i det elementet du vil overstyre det i.
+    Color i body elementet vil også overstyre color i html elementet.
+    Rem er en størrelse der vi sammenligner med den innstillingen brukeren har i nettleseren sin.
+    1 rem er lik 16 px. Hvis det er noen med synsvansker, så vil rem endre seg
+    etter hva brukeren har satt i nettleseren sin.
+    Text align er det som setter hvor teksten skal være på siden. default er left
+    I span elementet kan vi endre font style til italic. italic er kursiv. Span er litt slik som div
+    uten at du lager en ny blokk. Grei å bruke inne i blokker. 
+    text decoration er det som setter understrek på teksten. underline er det som setter understrek på teksten.
+    Kan endre fargen på streken ogsså som er gjort i span elementet. 
+
+    Hvis du vil endre en font som er spesiell, så er du nødt til å importere den fra google fonts. 
+    */
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: red;
+}

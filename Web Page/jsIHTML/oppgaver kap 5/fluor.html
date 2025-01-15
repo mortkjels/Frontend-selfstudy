@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "outputen"></p>
+    <script>
+        let grunnstoff = "fluor"
+        let kjemiskSymbol = "F"
+        let atomnummer = 9
+        let tilstand = "gass"
+
+        document.getElementById("outputen").innerHTML = `
+                    Grunnstoffet <b>${grunnstoff}</b> har det kjemiske symbolet <b>${kjemiskSymbol}</b>.<br>
+            Tilstanden ved romtemperatur er <i>${tilstand}</i>.<br>
+            Atomnummeret til grunnstoffet er <i>A</i> = ${atomnummer}, som vil si at det er ${atomnummer} protoner i kjernen.
+        `;
+        
+    </script>
+</body>
+</html>

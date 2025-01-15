@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "ay"></p>
+    <script>
+        let text = "velteSay siay aay adicalray ewnay pproachaay otay uildingbay seruay nterfaceiay"
+        let ord = text.split(" ");
+        let nytext = ord.map(ord => {
+            while (ord.includes("ay")){
+                let index = ord.indexOf("ay");
+                ord = ord.slice(0,index) + ord.slice(index +2);
+            }
+            return ord
+        }).join(" ");
+        let word = nytext.split(" ");
+        let nytexten = word.map(word =>{
+            if (word.length > 1){
+                return word.slice(-1) + word.slice (0,-1);
+            }
+            return word
+        }).join(" ")
+        document.getElementById("ay").innerHTML = nytexten
+    </script>
+</body>
+</html>
+
+<!-- logikken her er at den flytter fremste bokstav i ordet bak og legger til ay på slutten. Denne koden fjerner først ay, deretter flytter bakerste ord frem for 
+å få frem setningen vi ønsker -->

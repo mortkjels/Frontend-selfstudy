@@ -1,0 +1,19 @@
+body{
+    background-color: #ebeef0;
+}
+
+table{
+    width: 17%;
+    border: 3px;
+    text-align: left;
+    border-color: black;
+}
+#schedule{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}

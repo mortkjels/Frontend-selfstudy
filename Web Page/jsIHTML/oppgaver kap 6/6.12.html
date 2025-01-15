@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippeliga Tabell</title>
+</head>
+<body>
+    <div id="team-list"></div>
+
+    <script>
+        // Dataene som objekter
+        const teams = [
+            { posisjon: "1", lag: "Bodø-Glimt", kamper: "29", seire: "17", uavgjort: "4", tap: "8" },
+            { posisjon: "2", lag: "Brann", kamper: "29", seire: "17", uavgjort: "5", tap: "7" },
+            { posisjon: "3", lag: "Viking", kamper: "29", seire: "16", uavgjort: "8", tap: "5" }
+        ];
+
+        // Velger hvor vi skal vise opplysningene
+        const teamListDiv = document.getElementById("team-list");
+
+        // Iterer gjennom hvert lag i teams
+        teams.forEach(team => {
+            const teamInfo = `
+                <p>
+                    Posisjon: ${team.posisjon}, Lag: ${team.lag}, Kamper: ${team.kamper},
+                    Seire: ${team.seire}, Uavgjort: ${team.uavgjort}, Tap: ${team.tap}
+                </p>
+            `;
+            teamListDiv.innerHTML += teamInfo; // Legger til HTML
+        });
+    </script>
+
+    <script src = "sdds.js"></script>
+</body>
+</html>

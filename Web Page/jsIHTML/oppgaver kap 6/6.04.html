@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "2"></p>
+    <p id = "3"></p>
+    <p id = "4"></p>
+    <p id = "5"></p>
+    <p id = "6"></p>
+    <p id = "7"></p>
+
+
+    <script>
+        let a = []
+        for (let index = 0; index < 100; index++) {
+            a.push(index)
+        }
+        document.getElementById("2").innerHTML = `Her er et array fra 0 til 100: ${a}`
+
+        let b = []
+        a.forEach(index => {
+            if (index % 2 === 0){
+                b.push(index) 
+            }
+        });
+        document.getElementById("3").innerHTML = `Her er et array for partall : ${b}`
+
+        let c = []
+        a.forEach(index => {
+            if (index % 2 !== 0){
+                c.push(index) 
+            }
+        });
+        document.getElementById("4").innerHTML = `Her er et array for oddetall : ${c}`
+        document.getElementById("5").innerHTML = `Her er lengden av array til b : ${b.length}`
+        document.getElementById("6").innerHTML = `Her er lengden av array til c : ${c.length}`
+        document.getElementById("7").innerHTML = `Her er lengden av array b + c : ${b.length + c.length}`
+    </script>
+</body>
+</html>

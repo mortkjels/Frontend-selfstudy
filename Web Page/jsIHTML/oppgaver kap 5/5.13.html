@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rød = 0
+
+        function oppdaterfargen(verdi){
+            rød = verdi;
+            document.getElementById("overskrift").style.color = `rgb(${rød}, 0, 0)`;
+        }
+    </script>
+
+    <label>Rødhet:
+        <input type="range" min="0" max="255" oninput="oppdaterfargen(this.value)">
+    </label>
+    
+    <h1 id="overskrift" style="color: rgb(0, 0, 0);">Overskrift med farge</h1>
+</body>
+</body>
+</html>

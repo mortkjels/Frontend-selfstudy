@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="No">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="styleGPT.css">
+</head>
+<body>
+    <h1>
+        Velkommen til HTML
+    </h1>
+    <p>Her skal jeg utføre ulike operasjoner som jeg har gått gjennom gjennom oppgavene</p>
+
+    <div>
+        <h3>
+            Tabell
+        </h3>
+        <p>Her skal jeg lage en enkel tabell for mandag hva jeg gjør fra 06-14</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>06.00-08.00</th>
+                    <th>08.00-10.00</th>
+                    <th>10.00-12.00</th>
+                    <th>12.00-14.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        Trening med fotballlaget
+                    </td>
+                    <td>Forelesning</td>
+                    <td>Egenstudie</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h3>
+            Hund fra bilde
+        </h3>
+        <p>
+            Her skal jeg gå gjennom hvordan jeg kan hente et bilde og lage en fin fremstilling av en ønskehund.
+        </p>
+        <img src="../../bilde/hund.jpeg" alt="Bilde av hunden" width="300">
+    </div>
+
+    
+    <p>
+        <h3>
+            Restaurant bestilling
+        </h3>
+       Hvis du ønsker å se hvordan jeg lagde en modell der du kan bestille middag på resturant, trykk her: <a href="../HTML/1.45.html">Resturantbestilling</a> 
+    </p>
+
+<h3>Skjema</h3>
+<form action="../../felt.html">
+    <div class = "form-group">
+        <label for="name"><b>Navn</b></label>
+        <input type="text" name="Name" id="name" required>
+
+    <div class = "form-group">
+        <label for="Alder"><b>Alder</b></label>
+        <input type="number" name="alder" id="Alder" required>
+    </div>
+    <div class = "form-group">
+        <label for="Passord"><b>Passord</b></label>
+        <input type="password" name="password" id="Passord" required>
+    </div>
+    <div class="form-group">
+        <label for="radio-hund">Hund
+            <input type="radio" name="Radio" id="radio-hund" value="hund" required>
+        </label>
+        <label for="radio-katt">Katt
+            <input type="radio" name="Radio" id="radio-katt" value="katt" required>
+        </label>
+    </div>
+    
+    <div class = "form-group">
+        <select name="Kjønn" id="kjønn"><b>Kjønn</b required>
+        <option value="Mann">Mann</option>
+        <option value="Kvinne">Kvinne</option> 
+        <option value="Ikke binær">Ikke binær</option> 
+    </select>
+    </div>
+    <div class = "form-group">
+        <label for="Glider"><b>Høyde</b></label>
+        <input type="range" name="Glider" id="Glider" min="0" max="2.50" step="0.01" value = 0 oninput = "this.nextElementSibling.value = this.value" required>
+        <output>0</output> m
+    </div>
+
+<button type = "submit">Send</button>
+</form>
+
+
+</body>
+</html>

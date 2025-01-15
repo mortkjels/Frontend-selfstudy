@@ -1,0 +1,100 @@
+body{
+    background-color: rgba(99, 89, 89, 0.3);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 1%;
+}
+header{
+    display: flex;
+    width: 30rem;
+}
+
+main{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button{
+    border-radius: 5%;
+    border-color: rgb(252, 165, 2);
+    background-color: black;
+    color: white;
+}
+
+table{
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #333333; /* Mørk bakgrunn */
+    color: #ffffff; /* Hvit tekst */
+    text-align: center;
+}
+th, td {
+    border: 1px solid #ffffff; /* Linjer mellom rader og kolonner */
+    padding: 10px; /* Litt mellomrom i cellene */
+}
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(99, 89, 89, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.form-group{
+    margin-bottom: 5%;
+}
+input[type="text"], input[type="number"]{
+    background-color: #151414;
+    color: #ffffff;
+}
+
+/* Styling for gruppen */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Mellomrom mellom boksene */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styling for checkboxene */
+.checkbox-group input[type="checkbox"] {
+    appearance: none; /* Fjern standard checkbox */
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px; /* Gjør boksen litt avrundet */}
+
+/* Når checkbox er valgt */
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: #4caf50; /* Grønn farge når valgt */
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
+}
+
+/* Når musen er over */
+.checkbox-group input[type="checkbox"]:hover {
+    border-color: #888;
+    background-color: #e6e6e6; /* Lett grå for hover */
+    cursor: pointer;
+}
+
+img{
+    width: 10rem;
+    height: auto;
+    border-radius: 5px;
+    display: inline;
+}
+
+button:hover{
+    background-color: #493501;
+    cursor: pointer;
+    transform: scale(1.05);
+}

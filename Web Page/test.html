@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <p id = "2"></p>
+    <p id = "3"></p>
+    <p id = "4"></p>
+    <p id = "5"></p>
+    <p id = "6"></p>
+    <p id = "7"></p>
+    <script>
+        let a =[]
+
+        for (let index = 0; index < 100; index++) {
+            a.push(index)
+        }
+        document.getElementById("2").innerHTML = `A er en array fra 0-99: ${a}`;
+
+        let b =[]
+
+        a.forEach(index => {
+            if (index % 2 === 0) {
+                b.push(index)
+            }
+        });
+        document.getElementById("3").innerHTML = `B er en array med partall: ${b}`;
+        
+        let c =[]
+
+
+        a.forEach(index => {
+            if (index % 2 !== 0) {
+                c.push(index)
+            }
+        });
+        document.getElementById("4").innerHTML = `C er en array med oddetall: ${c}`;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../jsIHTML/quiz.css">
+</head>
+<body>
+    <h1>Velkommen til Morten's superquiz!</h1>
+    <form id="quiz-form">
+        <label for="q1">Hvor mange stater er det i USA?</label>
+        <input type="number" name="q1" id="q1" min="0" max="70"> <br>
+
+        <label for="q2">Hva er en CPU?</label>
+        <input type="text" name="q2" id="q2"> <br>
+
+        <label for="q3">Hva er strukturen i en body for en nettside i HTML?</label>
+        <input type="text" name="q3" id="q3"> <br>
+
+        <div class="form-group">
+            <label>Velg prinsipp:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="avkrysning" id="avkrysningid">
+                <label for="avkrysningid">Konfidensialitet</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="avkrysning" id="avkrysningid2">
+                <label for="avkrysningid2">Integritet</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="avkrysning" id="avkrysningid3">
+                <label for="avkrysningid3">Tilgjengelighet</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="avkrysning" id="avkrysningid4">
+                <label for="avkrysningid4">Robusthet</label>
+            </div>
+        </div><br>
+
+        <label for="q5">Hva heter den mannlige programlederen i Alle mot Alle?</label>
+        <input type="text" name="q5" id="q5"> <br>
+
+        <div class="form-group"></div>
+        <label for="q6">Hva er det binære tallet 1010 i 10 tallsystemet?</label>
+        <div class="form-group">
+            <label for="radio1">3</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio2">10</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio3">8</label>
+            <input type="radio" name="radio" id="radio3">
+        </div><br>
+
+        <label for="q7">Hva er basen til det binære tallsystemet?</label>
+        <input type="number" name="q7" id="q7" min="0" max="20"> <br>
+
+        <label for="q8">Hva er 2*4?</label>
+        <input type="number" name="q8" id="q8" min="0" max="20"> <br>
+
+        <button type="submit">Send inn</button>
+    </form>
+
+    <!-- Koble til JS -->
+    <script src = "quiz.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Jeg begynte å fortære en sandiwch mens jeg kjørte taxi på vei til quiz</p>
+    <p id = "title"></p>
+    <script>
+        let text = "Jeg begynte å fortære en sandiwch mens jeg kjørte taxi på vei til quiz"
+        let nytext = text.replace(/å/g, "aa").replace(/æ/g, "ae").replace(/ø/g, "oe");
+        document.getElementById("title").innerHTML = nytext;
+    </script>
+</body>
+</html>

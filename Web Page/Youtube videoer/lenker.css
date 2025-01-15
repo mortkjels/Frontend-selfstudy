@@ -1,0 +1,28 @@
+a{
+    color: green;
+    text-decoration: none;
+}
+/* farge endring på alle lenkene. tekst decoration gir oss uten underline på lenken.  */
+a:visited{
+    color: red
+}
+/* lenken til noe som er besøkt */
+a:hover{
+    color: blue;
+    font-size: 1.3rem;
+}
+/* hovre over, altså peke på en lenke sp vil den endre farge. fontsize øker jo størrelsen når du er på den  */
+a:active{
+    color: yellow
+}
+/* active er når du klikker så endrer den fatge */
+
+a:focus{
+    color: pink;
+    font-size: 2rem;
+}   
+/* focus er at når du trykker på tab tasen så øker det størrelsen og farge for eksempel for svaksynte */
+
+/* rekkefølgen er viktig. Så vi har samme struktur, altså genrell, besøkt */
+/* siden lenkene er typiske inline element, så uten break hvis vi bare har lenkene i body
+så havner de på samme linje.  */

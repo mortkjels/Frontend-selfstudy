@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Test</title>
+</head>
+<body>
+    <script>
+        const team = ["1", "Bodø-Glimt", "29", "17", "4", "8"];
+        const teams = {
+            Posisjon: "1",
+            Lag: "Bodø-Glimt",
+            Kamper: "29",
+            Seire: "17",
+            Uavgjort: "4",
+            Tap: "8"
+        };
+        
+        // Logg alle verdier én etter én
+        console.log("Posisjon:", team[0]); // "1"
+        console.log("Lag:", team[1]); // "Bodø-Glimt"
+        console.log("Kamper:", team[2]); // "29"
+        console.log("Seire:", team[3]); // "17"
+        console.log("Uavgjort:", team[4]); // "4"
+        console.log("Tap:", team[5]); // "8"
+        
+        console.table(teams)
+    </script>
+</body>
+</html>

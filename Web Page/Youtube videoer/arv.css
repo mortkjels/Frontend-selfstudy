@@ -1,0 +1,43 @@
+body {
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    /* Her kan vi se hvilke elementer som blir endret i kun body elementet. */
+    padding: 10px;
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;
+}
+
+/* Det som ligger in body arver vi stort sett alt i CSS */
+/* Her ser vi at vi arver fra ul siden ul er nærmere enn body.
+Derfor arver vi det vi spesifiserte i ul og ikke body. 
+*/
+
+ul {
+    background-color: brown;
+    border: 3px dotted black;
+}
+/* vi arver ikke ting som ligger i boksmodellen. */
+
+
+*{
+    /* background-color: cornflowerblue;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;  */
+}
+/* Det stjerne betyr er at det at alle elementene arve det som vi bestemmer i stjerne. 
+Da vil det se veldig spesielt ut 
+De som har sin egen, vil overstyre. Altså ul vil overstyre. 
+Stjerne etter body, vil overstyre body. Dette er jo fordi det kjører sekvensielt. 
+Tar vi stjerne før, så vil den også overstyre, siden den blir satt inn først. Den vil ikke arve noe. 
+Skriver vi h1 del etter stjerne, så vil h1 overstyre. 
+*/

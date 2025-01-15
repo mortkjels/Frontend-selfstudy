@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "output"></h1>
+    <script>
+        let navn = "verden"
+        navn = 5
+        document.getElementById("output").innerHTML = `Hallo ${navn}`
+    </script>
+</body>
+</html>
+
+<!-- kommer feil siden const står for konstant og da er navnet gitt som konstant og prøver vi å endre skal ikke det gå
+1. måte å endre på er å endre fra const til let eller var
+
+2. måte å endre på er å ikke ednre navn
+
+vi bruker som oftet const når vi ikke ønsker at verdien vår skal endres
+
+må bruke document.getElement siden vi ikke bruker rammeverk som React. Så det er måten eller en enkel måte å koble JS opp mot HTML. 
+-->

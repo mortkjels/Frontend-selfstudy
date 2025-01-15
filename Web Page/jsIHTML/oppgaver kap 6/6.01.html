@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "ok"></p>
+    <script>
+        let a = ["hei", "nei", "ja", "ok", "host"]
+        let siste = a.at(-1)
+        
+        document.getElementById("ok").innerHTML = `
+    <ul>
+        <li>a0: ${a[0]}</li>
+        <li>a3: ${a[2]}</li>
+        <li>Siste verdi: ${siste}</li>
+    </ul>
+`;
+    </script>
+</body>
+</html>

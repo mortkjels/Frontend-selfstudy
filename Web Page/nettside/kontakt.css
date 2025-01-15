@@ -1,0 +1,72 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../bilde/skog.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vmax;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:normal;
+    text-align: center;
+    color: aliceblue;
+}
+
+form{
+    text-align: left;
+    align-items: baseline;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+input{
+    background-color: rgb(2, 2, 2);
+    flex-direction: column;
+    display:list-item;
+    color: aliceblue; 
+    border-radius: 5px;   
+    height: 20px;
+}
+
+label{
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#Email{
+    width: 300px;
+}
+#Name{
+    width: 300px;
+}
+#Kommentar{
+    text-align: left;
+    margin-left: 0;
+    height: 200px;
+    width: 400px;
+    resize: none;
+    margin-left: 0;
+    padding: 10px;
+    display: block;
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+Button{
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+    margin-left: 5px;
+    height: 30px;
+    width: 100px;
+    display: block;
+    border-radius: 5px;
+}

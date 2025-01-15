@@ -1,0 +1,53 @@
+body{
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+};
+
+h1 + h3{
+    text-align: left;
+    color: #383bff;
+}
+
+p{
+    color: #efffef;
+}
+
+table{
+    width: 70%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: left;
+    color: #efffef;
+}
+
+th, td{
+    padding: 1%;
+    border: 5px solid #373747;
+}
+
+img{
+    display: block;
+    border-radius: 40%;
+    width: 100px;
+    aspect-ratio: 1;
+}
+form{
+    width: 40%;
+    margin: 20px auto;
+    background-color: #373747;
+    font-weight: bold;
+    color: #b3ffb3;
+}
+
+.form-group{
+    margin-bottom: 10%;
+}
+
+input,select, button{
+    color: #383bff;
+    
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "output">
+    </p>
+    <p id = "input">
+    </p>
+    <script>
+        let m = (Math.random()*10).toFixed(2)
+        let dm = (m*10).toFixed(1)
+        let cm = (m*100).toFixed(0)
+        let mm = (m*1000).toFixed(0)
+        document.getElementById("output").innerHTML = `
+        En lengde på ${m} m = ${dm} dm <br>  
+        En lengde på ${m} m = ${cm} cm <br>
+        En lengde på ${m} m = ${mm} mm <br>
+        `
+    </script>
+
+    <script>
+        let r = (Math.random()*10).toFixed(2)
+        let d = 2*r
+        let A = (2*Math.PI*r*r).toFixed(2)
+        let O = (Math.PI * d).toFixed(2)
+        document.getElementById("input").innerHTML = `
+        Arealet til en sirkel med radius ${r} = ${A} <br>
+        Omkretsen til en sirkel med radius ${r} = ${O}
+        `
+    </script>
+</body>
+</html>

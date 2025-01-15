@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang = "no">
+    <head>
+        <meta charset = "UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Informasjonsteknologi 1
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="topp">
+            Overskrift på nettstedet
+        </h1>
+        <p>
+            Hei dette er første side til nettsiden min i IT1. 
+        </p>
+        <h2>
+            Sub overskrift
+        </h2>
+        <p>
+            Hei dette er paragraf 2. <br>
+            Dette er linje 2 i paragrafen ved bruk av break. 
+        </p>
+        <img src="bilde/sjø.jpeg" alt="Bilde av sjø" width="600" height="600">
+
+        <h1>
+            Lenker
+        </h1>
+        <h2>
+            Lenke til ekstern nettside
+        </h2>
+        <p>
+            Du kan lese mer om dette hos <a href="https://www.vg.no" target="_blank">VG</a>
+        </p>
+        <h2>
+            Lenke til lokal nettside
+        </h2>
+        <p>
+            Ta kontakt med oss på <a href="testside.html">kontaktsiden</a>
+        </p>
+        <h2>
+            Lenke til punkt på samme nettside som vi er på
+        </h2>
+        <p>
+            Tilbake til <a href="#topp"> tilbake til toppen</a>
+        </p>
+
+        <h1>
+            Listetyper
+        </h1>
+        <h2>
+            Unummerert liste
+        </h2>
+        <ul>
+            <li>
+                CPU
+            </li>
+            <li>
+                GPU
+            </li>
+            <li>
+                RAM
+            </li>
+        </ul>
+        <h2>
+            Nummerert liste 
+        </h2>
+        <ol>
+            <li>
+                RAM
+            </li>
+            <li>
+                ROM
+            </li>
+        </ol>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Navn
+                    </th>
+                    <th>
+                        Måned
+                    </th>
+                    <th>
+                        Lønn
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Lars
+                    </td>
+                    <td>
+                        Januar
+                    </td>
+                    <td>
+                        17.500kr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lars
+                    </td>
+                    <td>
+                        Februar
+                    </td>
+                    <td>
+                        22.500kr
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        Tilsammen
+                    </td>
+                    <td>
+                        40.000kr
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>
+            Div Elementet
+        </h1>
+        <div class="hovedtekst">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="nyhetssak">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </body>
+</html>
+
+<!-- 
+Del 1:
+
+Html i krokkedille tegnene er html tag. Head tag er hvor man som regel skriver tittel, 
+Alle html filer må ha en start tag og en slutt tag. Slash betyr slutten på html elementet. Alt som skal være på nettsiden på være innenfor
+Title har også en start og slutt tag. 
+
+lang = "" betyr hvilken språk vi bruker, legger det til i html taggen.
+
+Bør ha med meta charset = "UTF - 8" er generelt tegnsett for norsk språk. slik som æ ø å
+
+Style, det er for formatering av nettsiden mtp utseednde og layout størrelse fonter etc. det gjøres inne i style i hodet til html filen. 
+
+Vi bruker storsett link til en ekstren sheet, der vi bruker
+link rel = "stylesheet" href = "style.css"
+
+har du link rel er det unødvendig med link rel. 
+
+meta vp (viewport) bestemmer at nettsiden skal endres etter bredden til skjermen.
+
+Del 2:
+Doctype sier at det er html versjon 5.0, bør ha med på alle nye nettsteder
+
+Body
+Alt innhold til nettsiden skal ligge i body elementet
+
+Begynner ofte med overskrift, det er gitt for h1 taggen
+
+p er paragraf, alt som er mellom her er mellom paragrafen.
+paragraf skal ikke gjøre mer enn vanlig mellomrom, så hvis du har 4 mellomrom så vil det fortsatt oppføre seg som vanlig. Samme med linje shift og enter flere ganger. 
+Paragrafen er ment for å ha det sammenhengdene. 
+
+Tar du en ny paragraf, får du automatisk en ny linjeskift. 
+
+Andre typer overskrifter er h2 osv. 
+
+Hvis du skal ha linjeskift i et paragraf, kan man bruke noe som heter break som er gitt ved tag br.
+
+
+
+Del 3:
+For å sette inn bilder på nettstedet, er en start tag img 
+src er hvor bildet ditt er, enten et lokalt eller en url. 
+Hvis den ligger i en annen mappe, må du skrive mappenavnet først. typ bilde/sjø.jpeg
+Alt er en beskrivelse av bildet, for universell utforming. F.eks. opplesning av nettsiden for de som ikke kan se. 
+For å endre størrelse på bilde kan vi bruke width og height.
+Tallet er i piksler.
+Height bør man være forsiktig med, fordi det kan forandre proporsjonene til bildet.
+
+Hvis vi har en fil som er på nett et sted, da må vi bruke absolutt adresse på hvor bildet ligger. F.eks 
+Da bruker vi url til bildet. 
+
+typ img src = "https://www.google.com/sjø.jpeg" alt = "Bilde av sjø" width = "600" height = "600". 
+Tar du en fra internett må du sjekke at du har rettigheter til å bruke bildet.
+
+Fordeler med width og height på et bilde er hvis at det lastest ned veldig tregt, vil nettsiden sette av plass til det bildet
+slik at det ikke blir en stor endring i layouten.
+
+Dette krever at du vet ratio til bredde og høyde til bildet. 
+
+
+Del 4:
+Lenker:
+
+Lenke til ekstren nettside: 
+a href = "" er en lenke til en annen nettside. mellom hermetegnene skriver du urlen til nettsiden. Fullstendig addresse er nødvendig. 
+target = "_blank" betyr at den skal åpnes i en ny fane. slik at du ikke mister nettsiden du er på.
+tegn mellom > <a> er det som blir klikkbart. 
+For å representere til et punkt i nettsiden, bruker vi en id på der vi vil komme oss til. Denne iden skrives i href. med # foran for å representere 
+at det er en id.
+
+Del 5:
+
+Unummerert liste:
+Unummerert liste er en liste som ikke har tall foran seg.
+ul er start taggen for unummerert liste.
+li er list item, det er det som skal være i listen.
+Hvis du har flere list items, så må du ha flere li tags.
+
+Nummerert liste:
+Nummerert liste er en liste som har tall foran seg.
+ol er start taggen for nummerert liste.
+li er list item, det er det som skal være i listen.
+Hvis du har flere list items, så må du ha flere li tags.
+
+Del 6:
+Tabeller:
+
+Tabeller er en måte å presentere data på en oversiktlig måte.
+thead er overskriften på tabellen
+tbody er selve tabellen
+
+tfoot er foten på tabellen, typ en sumemring 
+
+disse gjør det enklere å formatere tabellen med css
+
+tr står for en rekke
+td står for en kolonne
+th står for en overskrift
+
+colspan = "2" betyr at den skal ta opp 2 kolonner. det er nødvendig for at summen skal komme under de andre summene
+rowspan = 2 betyr at den skla ta opp to rader. 
+
+Del 7:
+Div elementet.
+
+Div elementet er en container for deler av nettsiden, som vi ønsker å gjøre spesiell formatering på f.eks. 
+Div er veldig nyttig for css
+
+Div tagger kan vi gi tilhørighet i en klasse, ved å gi en klasse. f.eks class = "hovedtekst" 
+Flere div tagger bør ikke ha samme klasse, fordi det kan gjøre det vanskelig å formatere.
+
+-->

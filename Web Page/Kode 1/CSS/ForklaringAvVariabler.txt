@@ -1,0 +1,156 @@
+Generell styling
+
+body {}: Setter globale stiler for hele nettsiden.
+
+color: Endrer tekstfargen til hvit.
+
+background-color: Endrer bakgrunnsfargen til mørk grå.
+
+font-family: Setter skrifttypen til Arial eller sans-serif.
+
+margin: Fjerner standard margin rundt nettsiden.
+
+padding: Fjerner standard padding rundt nettsiden.
+
+line-height: Øker avstanden mellom linjer for bedre lesbarhet.
+
+Headinger
+
+h1, h3 {}: Setter styling for hovedoverskrifter og mindre overskrifter.
+
+text-align: Sentraliserer teksten.
+
+color: Endrer fargen til oransje for overskrifter.
+
+Paragrafer
+
+p {}: Definerer styling for avsnitt.
+
+color: Endrer teksten til lys grå.
+
+margin: Legger til mellomrom rundt avsnitt.
+
+Tabellstyling
+table {}: Definerer styling for tabeller.
+
+width: Angir bredden på tabellen til 80% av siden.
+
+margin: Sentraliserer tabellen med auto-innrykk.
+
+border-collapse: Fjerner mellomrom mellom kantlinjer.
+
+background-color: Gir tabellen en mørk bakgrunn.
+
+color: Setter tekstfargen i tabellen til hvit.
+
+text-align: Sentrerer teksten i celler.
+
+th, td {}: Definerer styling for tabellceller og overskrifter.
+
+border: Angir kantlinje rundt hver celle.
+
+padding: Legger til innvendig mellomrom i cellene.
+
+th {}: Spesifiserer styling for tabelloverskrifter.
+
+background-color: Gir tabelloverskriftene en litt lysere grå bakgrunn.
+
+td {}: Spesifiserer styling for vanlige celler.
+
+background-color: Gir vanlige celler en mørkere bakgrunn.
+
+Bildestyling
+
+img {}: Definerer styling for bilder.
+
+display: Endrer bildet til et blokk-element for sentrering.
+
+margin: Legger til avstand rundt bildet.
+
+border-radius: Gjør kantene på bildet avrundede.
+
+box-shadow: Legger til en skygge rundt bildet.
+
+Skjemastyling
+
+form {}: Definerer styling for skjemaet.
+
+width: Angir bredden på skjemaet til 80%.
+
+margin: Sentraliserer skjemaet.
+
+background-color: Setter bakgrunnsfargen for skjemaet til mørk grå.
+
+padding: Legger til innvendig mellomrom rundt skjemaet.
+
+border-radius: Gjør kantene på skjemaet avrundede.
+
+box-shadow: Legger til en skygge rundt skjemaet.
+
+label {}: Angir styling for etiketter i skjemaet.
+
+display: Gjør etikettene til blokk-elementer for å stå over input.
+
+margin-bottom: Legger til avstand mellom etikett og input.
+
+font-weight: Gjør teksten på etikettene fet.
+
+color: Setter etikettfargen til oransje.
+
+Input-felt og knapp
+
+input, select, button {}: Setter generelle stiler for skjemaelementer.
+
+width: Angir bredden på elementene til 100%.
+
+padding: Legger til innvendig mellomrom.
+
+margin-top: Gir mellomrom over elementet.
+
+border: Fjerner standard kantlinje.
+
+border-radius: Gjør kantene avrundede.
+
+box-sizing: Sørger for at padding inkluderes i elementets bredde.
+
+input[type="range"] {}: Spesifiserer styling for glider.
+
+appearance: Fjerner standard utseende for glideren.
+
+background: Setter gliderens spor til en mørk grå farge.
+
+height: Angir høyden på gliderens spor.
+
+border-radius: Gjør sporet avrundet.
+
+outline: Fjerner kantlinje ved fokus.
+
+input[type="range"]::-webkit-slider-thumb {}: Styler gliderens "tommel".
+
+width og height: Angir størrelsen på tommelen.
+
+background: Setter tommelen til oransje.
+
+border-radius: Gjør tommelen rund.
+
+cursor: Gjør tommelen klikkbar.
+
+button {}: Definerer styling for knapper.
+
+background-color: Setter knappens bakgrunn til oransje.
+
+color: Gjør teksten på knappen svart.
+
+border: Fjerner standard kantlinje.
+
+font-size: Øker skriftstørrelsen på knappen.
+
+font-weight: Gjør teksten fet.
+
+cursor: Gjør knappen klikkbar.
+
+transition: Legger til en animasjon for knappens hover-effekt.
+
+button:hover {}: Styler knappen når musepekeren er over den.
+
+background-color: Gjør bakgrunnen mørkere oransje ved hover.

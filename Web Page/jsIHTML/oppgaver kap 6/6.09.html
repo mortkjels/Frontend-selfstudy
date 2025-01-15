@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "frukter"></p>
+    <script>
+        let frukter = {
+            Eple : "20kr",
+            Appelsin : "10kr",
+            Drue : "25kr"
+        }
+// Start med en tom streng
+let liste = "Fruktene har disse prisene: <ul>";
+
+// Bygg opp listen
+for (let nøkkel in frukter) {
+    liste += `<li>Navn: ${nøkkel}, Pris: ${frukter[nøkkel]}</li>`;
+}
+
+// Avslutt listen
+liste += "</ul>";
+            
+
+// Sett inn i HTML
+document.getElementById("frukter").innerHTML = liste;
+    </script>
+</body>
+</html>

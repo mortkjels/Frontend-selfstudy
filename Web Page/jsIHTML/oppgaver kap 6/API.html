@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dagens vits</h1>
+    <p id="joke">Laster inn vits...</p>
+    <button onclick="getJoke()">Få en ny vits</button>
+
+    <script>
+        let joke; // Variabel for å holde vitsen
+
+        const getJoke = async () => {
+            try {
+                const data = await fetch("https://api.chucknorris.io/jokes/random");
+                const json = await data.json();
+                joke = json.value; // Hent vitsen fra JSON-dataen
+
+                // Oppdater vitsen på siden
+                document.getElementById("joke").innerText = joke;
+            } catch (error) {
+                console.error("Kunne ikke hente vits:", error);
+                document.getElementById("joke").innerText = "Kunne ikke laste inn vits.";
+            }
+        };
+
+        // Hent første vits når siden lastes
+        getJoke();
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+head:
+
+Det som skjer er at vi starter med å sette en type språk i starten av koden ved 
+bruk av html lang. 
+
+meta charset er et type charset som gjør at vi kan ha med tegnene æ ø å.
+
+title er det som blir vist i adressefeltet når jeg viser nettsiden i en preview. 
+
+link rel stylesheet er at jeg lenker html filen min med css for å da å ha en 
+ekstern fil der jeg bestemmer layout på nettsiden
+
+body:
+header:
+
+vi begynner med en overskrift i headeren. Header er satt som den øvre delen av en
+nettside, vi har også main og footer. Det blir typisk en inndeling av nettsiden.
+Jeg har valgt å bruke en localstorage fra en javascript fil for å hente 
+verdien jeg har satt.
+
+Script kan man velge å skrive js eller slik som jeg gjorde å kalle på javascript
+filen. 
+
+Main:
+her begynner selve midt innholdet. Jeg kan ta for meg form først. Det brukes til 
+å danne et skjema. Skjemaet jeg har valgt å lage er en quiz siden det er gøy. 
+
+Som vi ser har jeg definert div med klasser, dette er for å holde spørmsål og
+input sammen. Dette gjør det også enklere å gjøre endringer på i css. 
+
+Input typene kan endres som jeg har vist med nummer, checkboxer og text. Det finnes
+også andre typer der vi kan f.eks. lage en dato katalog hvis man ønsker å lage
+en bestillingsside. 
+
+Som vi ser også har jeg en button knapp som er nederst for å ha noe å sende inn til
+derimot for å kunne lagre resultatene som sendes er vi nødt til å koble til en txt 
+fil og server. 
+
+tabellen er standard, bruker også colspan her for å ta opp flere kolonner hvis jeg 
+ønsker det. 
+
+Her ville jeg vise frem litt mer javascript ferdigheter, ved å bruke
+matte biblioteket i javascript for å bruke beregninger for å kunne 
+regne ut omkretsen til en sirkel og arealet. 
+
+Under det bruker jeg en json fil og javascript for bredde i kunnskapene.
+Det som er med er at json filer er at man kan kun ha en type. 
+Altså enten objekt eller array. Her har jeg satt et array i et objekt. 
+
+Så legger jeg til et bilde der for å kunne ha noe image som viser litt
+kunnskap.
+
+Til slutt henter jeg et eksternt api og knytter da koden min opp mot en
+js funksjon for da at hver gang jeg trykker på knappen får vi en ny 
+chuck norris joke. 

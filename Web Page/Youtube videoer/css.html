@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang = "no">
+
+<head>
+    <meta charset="UTF 8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>
+Styling av nettsted med CSS 
+</h1>
+
+<h2>
+    Inline css
+</h2>
+
+<h2>
+    Intern css
+</h2>
+
+<h2>
+    Ekstern css
+</h2>
+</body>
+</html>
+
+<!--                 
+
+Del 1:
+Style color gir oss farge på overskriften.
+
+Inline css er ikke ønsket å gjøre det siden vi må gå gjennom hele og lete oss frem. I hvert fall
+med flere elementer med like styling.
+
+F.eks hvis vi har 10 overskrifter og vil endre fargen på alle, må vi endre alle 10. Dette er ikke
+effektivt. 
+
+
+Intern CSS:
+Lager en style element i head delen. Da kan vi endre fargen på flere for en gitt størrelse på overskriften 
+En annen fordel er at vi får samlet all css inne i style elementet. 
+Ulempen med dette, for å lage flere html sider så må jeg kopiere style elementet til alle html filene.
+
+Aller beste måten er å lage en ekstern css fil.
+Dette gjøres ved å lage en link til css filen i head delen. Ligger den i samme mappe trenger du ikke
+pathwayen for å finne filen, hvis den ligger i en annen mappe må du skrive pathwayen til filen.
+
+Kan bruke denne for å flere html filer til å bruke samme css filen.
+
+Del 2;
+Lager en ny html fil som vi kaller boxmodell og lager en box.css fil som vi gjør for å danne en style
+fil for denne html filen.
+
+Dette linkes som vanlig som tidligere 
+
+Width settes ved å bruke width i css filen. Kommenterer vi ut width i css filen, vil den ta default
+verdien som er 100% av bredden til skjermen.
+Samme gjelder for height.
+
+Hvis vi vil ha en fast størrelse på boksen, kan vi bruke px.
+
+Hvis vi vil ha en boks som er 50% av bredden til skjermen, kan vi bruke 50% i css filen.
+
+Indre rom, altså marg kan vi sette ved å bruke padding
+
+Kan også fikse kantlinje, det er ved bruk av border. Der kan vi bruke 
+3px dashed or solid or dotted for å få en kantlinje, med farge for å få fargen på linjen. 
+
+Utenfor border kan vi ha margin, som er avstanden fra boksen til andre elementer. Da får vi luft
+mellom de forskjellige div elementetne vi har i html filen. 
+
+Enkel midtstill er 20 px auto 30 px auto i css filen slik den bruker opp all plass på venstre og høyre 
+og midtstille boksen. 
+
+Margin collapse er at hvis vi har to bokser som er ved siden av hverandre, vil de dele marginen. Den 
+velger den største marginen når de er ved siden av hverandre.
+
+* elementet går på alle elementene i html filen.
+
+box sizing border box gjør at bredden og høyden på boksen er inkludert i bredden og høyden til boksen.
+For a full kontroll på hvor høy og bred boksene blir så kan du bruke border box. 
+
+Del 3:
+Styling av fonter og tekst ved hjelp av css. 
+-->

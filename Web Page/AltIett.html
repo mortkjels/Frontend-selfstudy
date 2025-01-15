@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt I Ett</title>
+    <link rel="stylesheet" href="AltIett.css">
+</head>
+<body>
+    <header>
+        <h1 id="overskrift"></h1>
+        <script src ="AltIett.js">
+        </script>
+    </header>
+    <main>
+        <form action="test.html">
+        <div class = "form-group">
+            <h3>Quiz</h3>
+            <label for="q1">Hva heter USA sin nye president?</label><br>
+            <input type="text" name="q1" id="q1" required placeholder="Barack Obama">
+        </div>
+        <div class = "form-group">
+            <label for="q2">Hva heter USA sin gamle president?</label><br>
+            <input type="text" name="q2" id="q2" required placeholder="George W Bush">
+        </div>
+        <div class = "form-group">
+            <label for="q4">Hva er 100101 i titallsystemet?</label><br>
+            <input type="number" name="q4" id="q4" required placeholder="10">
+        </div>
+        <div class = "checkbox-group">
+            <label for="q3">Hva er de tre prinsippene innenfor nettsikkerhet?</label><br>
+            <label>Konfidensialitet</label>
+            <input type="checkbox" name="q3_1" id="q3_1">
+            <label>Integritet</label>
+            <input type="checkbox" name="q3_2" id="q3_2">
+            <label>Tilgjengelighet</label>
+            <input type="checkbox" name="q3_3" id="q3_3">
+            <label>Robusthet</label>
+            <input type="checkbox" name="q3_4" id="q3_4">
+        </div>
+        <button>Send inn resultater</button>
+    </form>
+        <table>
+            <h3>Her er en tabell over min foredragsuker </h3>
+            <thead>
+                <tr>
+                    <th>Mandag</th>
+                    <th>Tirsdag</th>
+                    <th>Onsdag</th>
+                    <th>Torsdag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NTNU</td>
+                    <td>OsloMet</td>
+                    <td>NMBU</td>
+                    <td>UIS</td>
+                </tr>
+                <tr>
+                    <td colspan="4">NTNU</td>
+                </tr>
+                <tr>
+                    <td>UIT</td>
+                    <td colspan="3">UIA</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>
+            Areal og Omkrets
+        </h3>
+        <p>Her for hver gang nettsiden kjøres så regner den ut for en tilfeldig radius</p>
+        <div id = "Areal"></div>
+        <div id = "d"></div>
+            <script src = "AltIett.js"></script>
+            <div>
+                <h3>Under her finner vi 3 detektiver</h3>
+                <p id = "Detektiv"></p>
+                <script src = "AltIett.js"></script>
+                <img src="bilde/hund.jpeg" alt="Bilde av hunden de skal finne">
+            </div>
+    </main>
+    <footer>
+        <div>
+            <h3>Litt forskjellige Chuck Norris jokes</h3>
+            <p id="joke">Laster inn vits...</p>
+            <button onclick="getJoke()">Få en ny vits</button>
+            <script src="AltIett.js"></script>
+        </div>
+    </footer>
+</body>
+</html>
